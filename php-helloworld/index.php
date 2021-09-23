@@ -11,8 +11,8 @@ $password    = POSTGRESQL_PASSWORD;
 $host        = "172.21.30.166";
 $port        = "";
 $dbname      = "acmedb";
-$user        = "user1";
-$password    = "mypa55";
+$user        = "acme";
+$password    = "redhat";
 
 
 if (!$connection = pg_connect ("host=$host dbname=$dbname user=$user password=$password")) {
