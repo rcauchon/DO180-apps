@@ -9,7 +9,7 @@ $user        = POSTGRESQL_USER;
 $password    = POSTGRESQL_PASSWORD;
 */
 
-$host        = "172.21.30.166";
+$host        = .$_ENV["INFODB_SERVICE_HOST"].;
 $port        = "";
 $dbname      = "acmedb";
 $user        = "acme";
