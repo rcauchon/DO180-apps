@@ -9,11 +9,11 @@ $user        = POSTGRESQL_USER;
 $password    = POSTGRESQL_PASSWORD;
 */
 
-$host        = ".$_ENV["INFODB_SERVICE_HOST"].";
+$host        = $_ENV["INFODB_SERVICE_HOST"];
 $port        = "";
-$dbname      = ".$_ENV["POSTGRESQL_DATABASE"].";
-$user        = ".$_ENV["POSTGRESQL_USER"].";
-$password    = ".$_ENV["POSTGRESQL_PASSWORD"].";
+$dbname      = $_ENV["POSTGRESQL_DATABASE"];
+$user        = $_ENV["POSTGRESQL_USER"];
+$password    = $_ENV["POSTGRESQL_PASSWORD"];
 
 print "Host: " .$_ENV["INFODB_SERVICE_HOST"]. "\n";
 
