@@ -15,7 +15,7 @@ $dbname      = "acmedb";
 $user        = "acme";
 $password    = "redhat";
 
-print "Host: " getenv("INFODB_SERVICE_HOST");
+print "Host: " .$_ENV["INFODB_SERVICE_HOST"]. ;
 
 if (!$connection = pg_connect ("host=$host dbname=$dbname user=$user password=$password")) {
     $error = error_get_last();
