@@ -4,10 +4,8 @@ $dbuser = getenv("database-user");
 $dbpwd = getenv("database-password");
 $dbname = getenv("database-name");
 
-print " Host: ".$dbhost. "<br>";
-/*
 print " Host: " .$dbhost.  " DBname:" .$dbname. " User:" .$dbuser. " Password:" . $dbpwd. "<br>";
-*/
+
 $connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 
 if ($connection->connect_errno) {
@@ -17,4 +15,5 @@ if ($connection->connect_errno) {
     printf("Connected to the database");
 }
 $connection->close();
+
 ?>
