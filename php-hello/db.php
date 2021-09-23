@@ -9,7 +9,7 @@ print " Host: " .$dbhost.  " DBname:" .$dbname. " User:" .$dbuser. " Password:" 
 # new mysqli
 # mysql_connect
 # mysqli_connect
-$connection = mysqli_connect($dbhost, $dbuser, $dbpwd, $dbname);
+$connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 
 if ($connection->connect_errno) {
     printf("Connect failed: %s\n", $mysqli->connect_error);
