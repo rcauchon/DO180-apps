@@ -6,7 +6,7 @@ $dbname = getenv("database-name");
 
 print " Host: " .$dbhost.  " DBname:" .$dbname. " User:" .$dbuser. " Password:" . $dbpwd. "<br>";
 
-$connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+$connection = mysql_connect($dbhost, $dbuser, $dbpwd, $dbname);
 
 if ($connection->connect_errno) {
     printf("Connect failed: %s\n", $mysqli->connect_error);
