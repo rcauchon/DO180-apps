@@ -1,12 +1,12 @@
 <?php
 $dbhost = getenv("MYSQLDB_SERVICE_HOST");
-$dbuser = getenv("databaseuser");
-$dbpwd = getenv("databasepassword");
-$dbname = getenv("databasename");
+$dbuser = getenv("database-user");
+$dbpwd = getenv("database-password");
+$dbname = getenv("database-name");
 
 print " Host: ".$dbhost. "<br>";
 /*
-print " Host: " .$_ENV["INFODB_SERVICE_HOST"].  " DBname:" .$_ENV["POSTGRESQL_DATABASE"]. " User:" .$_ENV["POSTGRESQL_USER"]. " Password:" . $_ENV["POSTGRESQL_PASSWORD"]. "<br>";
+print " Host: " .$dbhost.  " DBname:" .$dbname. " User:" .$dbuser. " Password:" . $dbpwd. "<br>";
 */
 $connection = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 
