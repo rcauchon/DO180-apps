@@ -14,6 +14,7 @@ $dbname      = "acmedb";
 $user        = "acme";
 $password    = "redhat";
 
+print "Host: " getenv("APP_ENV");
 
 if (!$connection = pg_connect ("host=$host dbname=$dbname user=$user password=$password")) {
     $error = error_get_last();
