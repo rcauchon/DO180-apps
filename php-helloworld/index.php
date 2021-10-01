@@ -1,14 +1,6 @@
 <?php
 print "Hello, World! Again php version is " . PHP_VERSION . "<br>";
 
-/*
-$host        = INFODB_SERVICE_HOST;
-$port        = INFODB_SERVICE_PORT_POSTGRESQL;
-$dbname      = POSTGRESQL_DATABASE;
-$user        = POSTGRESQL_USER;
-$password    = POSTGRESQL_PASSWORD;
-*/
-
 $host        = $_ENV["INFODB_SERVICE_HOST"];
 $port        = "";
 $dbname      = $_ENV["POSTGRESQL_DATABASE"];
